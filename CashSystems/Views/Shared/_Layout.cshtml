@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cashsystem</title>
+    <meta name="description" content="HTML5 & CSS3">
+    <meta name="keywords" content="HTML5, CSS3, Theme,bootstrap3,clean design">
+
+    <!--bootstrap3 css-->
+    <link href="~/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--ion icon fonts css-->
+    <link href="~/assets/icons/css/ionicons.css" rel="stylesheet">
+    <!--custom css-->
+    <link href="~/assets/css/style.css" rel="stylesheet" type="text/css">
+    <!--google  font family-->
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic' rel='stylesheet' type='text/css'>
+    <!--flex slider css-->
+    <link href="~/assets/css/flexslider.css" rel="stylesheet">
+    <!--animated  css-->
+    <link href="~/assets/css/animate.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<body>
+    <!--preloader-->
+    <div id="preloader"></div>
+    <!--preloader-->
+    <!--back to top-->
+    <a href="#" class="scrollToTop"><i class="ion-android-arrow-dropup-circle"></i></a>
+    <!--back to top end-->
+    <header class="header-main">
+        <div class="top-bar">
+
+            <div class="container">
+                <ul class="info list-inline pull-left hidden-xs">
+                    <li><a href="#" class="hover-color"><i class="ion-ios-email-outline"></i> info@cashsystems.co.za</a></li>
+                    <li><i class="ion-iphone"></i> +27 (0) 11 869 5975</li>
+                    <li><i class="ion-android-phone-portrait"></i> +27 (0) 76 582 0365</li>
+                </ul>
+                @*<div class="pull-right">
+                        <ul class="info list-inline hidden-xs">
+                            <li><a href="#" class="hover-color">Create an account?</a></li>
+                            <li><a href="#" class="hover-color"><i class="ion-man"></i> Login</a></li>
+                        </ul>
+                    </div>*@
+            </div><!--container end-->
+        </div><!--topbar end-->
+        <div class="navbar navbar-inverse sticky-nav sticky yamm" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="~/Home/Index"><img src="~/assets/img/CashSystems.png" class="img-responsive" alt=""></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right text-center">
+                        <li class="active dropdown">
+                            @Html.ActionLink("Home", "Index")
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Products</a>
+                            <ul class="dropdown-menu">                           
+                                <li><a href="~/Product/SDS">SDS <br />Smart Deposit Solutions</a></li>
+                                <li><a href="~/Product/SPS">SPS <br />Smart POS Solutions</a></li>
+                                <li><a href="~/Product/RCS">RCS <br />Recycling Cash Solutions</a></li>
+                                <li><a href="~/Product/NoteCounters">NOTE COUNTERS</a></li>
+                            </ul>
+                        </li>
+                        <li class="social-nav"><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li class="social-nav"><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li class="social-nav"><a href="#"><i class="ion-social-youtube"></i></a></li>
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-->
+        </div><!--navigation end-->
+    </header><!--header main end-->
+
+    @RenderBody()
+    <hr />
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 margin-btm-20">
+                    <div class="footer-col">
+                        <h3>CashSystem</h3>
+                        <p>
+                            Cash Systems is always at your service and thank you in advance for entrusting us with your business.
+                        </p>
+                    </div>
+                    <div class="space-20"></div>
+                    <div class="footer-col">
+                        <h3>contact info</h3>
+                        <p>
+                            <i class="ion-home"></i> 160 South Rand Road
+                            Tulisa Park
+                            Johannesburg
+                            South Africa
+                        </p>
+                        <p><i class="ion-iphone"></i> +27(0)11 869 5975</p>
+                        <p><i class="ion-email"></i> info@cashsystems.co.za</p>
+                        <p><i class="ion-email"></i> sales@cashsystems.co.za</p>
+                    </div>
+                    <div class="space-20"></div>
+                    <div class="footer-col">
+                        <h3>Follow us</h3>
+                        <ul class=" list-inline social-btn">
+                            <li><a href="#"><i class="ion-social-facebook" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like On Facebook"></i></a></li>
+                            <li><a href="#"><i class="ion-social-twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On twitter"></i></a></li>
+                            <li><a href="#"><i class="ion-social-googleplus" data-toggle="tooltip" data-placement="top" title="" data-original-title="Follow On googleplus"></i></a></li>
+                            <li><a href="#"><i class="ion-social-pinterest" data-toggle="tooltip" data-placement="top" title="" data-original-title="pinterest"></i></a></li>
+                            <li><a href="#"><i class="ion-social-skype" data-toggle="tooltip" data-placement="top" title="" data-original-title="skype"></i></a></li>
+                        </ul>
+                    </div><!--footer social col-->
+                </div><!--col-4 end-->
+                <div class="col-md-4 margin-btm-20">
+                    <div class="footer-col">
+                        <h3>Sales Department</h3>
+                        <p><i class="ion-iphone"></i> +27 11 039 3161</p>
+                        <p><i class="ion-social-skype"></i> mandletfu</p>
+                        <p><i class="ion-email"></i> mandla@mandletfucashsystems.co.za</p>
+                        <p><i class="ion-email"></i> sales@mandletfucashsystems.co.za</p>
+                        <p><i class="ion-email"></i> info@mandletfucashsystems.co.za</p>
+                    </div>
+                </div><!--latest post col end-->
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h3>Get in touch</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Name...">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Email...">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Subject...">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea class="form-control" placeholder="Massage..." rows="7"></textarea>
+                                </div>
+                                <div class="col-md-12 text-right">
+                                    <button type="submit" class="btn btn-lg btn-white">Send massege</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!--get in touch col end-->
+            </div><!--footer main row end-->
+            <div class="space-70"></div>
+            <div class="row">
+                <div class="col-md-12 text-center footer-bottom">
+                    @*<a href="index.html"> <h1>Cash System</h1></a>*@
+                    <div class="space-20"></div>
+                    <span>&copy;2020.all right resrved.</span>
+                </div>
+            </div><!--footer copyright row end-->
+        </div><!--container-->
+    </div><!--footer main end-->
+    @*</div>*@
+    <!--scripts-->
+    <!--scripts-->
+    <script src="~/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/assets/js/modernizr.custom.97074.js"></script>
+    <script src="~/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="~/assets/js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="~/assets/js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+    <script src="~/assets/js/jquery.sticky.js" type="text/javascript"></script>
+    <script src="~/assets/js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="~/assets/js/jquery.mixitup.min.js" type="text/javascript"></script>
+    <script src="~/assets/js/parallax.min.js" type="text/javascript"></script>
+    <script src="~/assets/js/wow.min.js" type="text/javascript"></script>
+    <script src="~/assets/js/app.js" type="text/javascript"></script>
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
+</body>
+</html>
